@@ -1,0 +1,5 @@
+CREATE TABLE `commands` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `command` varchar(11) NOT NULL DEFAULT '"NULL"',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
