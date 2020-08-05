@@ -52,7 +52,7 @@ public class NewControl : MonoBehaviour
     IEnumerator Move()
     {
         Vector3 start = drill.transform.localPosition;
-        Vector3 end = initial + new Vector3(-x, -z, -y);
+        Vector3 end = initial + new Vector3(-x, z, -y);
         float progress = 0.0f;
         while (progress < 0.1f)
         {
