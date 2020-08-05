@@ -1,0 +1,1 @@
+The file CameraFocusController.cs is only needed by some Android phones. If the camera is out of focus, you can add this script to "ar camera" object. If everything's fine or the script has error reporting, just delete it.
