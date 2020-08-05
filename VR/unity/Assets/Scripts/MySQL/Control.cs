@@ -123,9 +123,12 @@ public class Control : MonoBehaviour
         // Vector3 endx = new Vector3(-x, xFrame.transform.position.y, xFrame.transform.position.z);
         // Vector3 endy = new Vector3(-x, yFrame.transform.position.y, -y);
         // Vector3 endz = new Vector3(-x, -z, -y);
-        Vector3 endx = new Vector3(-y, xFrame.transform.position.y, xFrame.transform.position.z);
-        Vector3 endy = new Vector3(-y, yFrame.transform.position.y, -x);
-        Vector3 endz = new Vector3(-y, -z, -x);
+        // Vector3 endx = new Vector3(-y, xFrame.transform.position.y, xFrame.transform.position.z);
+        // Vector3 endy = new Vector3(-y, yFrame.transform.position.y, -x);
+        // Vector3 endz = new Vector3(-y, -z, -x);
+        Vector3 endx = new Vector3(y, xFrame.transform.position.y, xFrame.transform.position.z);
+        Vector3 endy = new Vector3(y, yFrame.transform.position.y, -x);
+        Vector3 endz = new Vector3(y, z, -x);
         float totalTime = Vector3.Distance(startz, endz) / Mathf.Sqrt(speedX * speedX + speedY * speedY + speedZ * speedZ);
         float progress = 0.0f;
         while (progress < totalTime)
