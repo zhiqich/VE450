@@ -238,7 +238,7 @@ public class Mach3V2 : MonoBehaviour
             float x = rdr.GetFloat("x");
             float y = rdr.GetFloat("y");
             float z = rdr.GetFloat("z");
-            string gcode = string.Format("G01 X{0} Y{1} Z{2} F200", x, y, z);
+            string gcode = string.Format("G00 X{0} Y{1} Z{2} F200", x, y, z);
             SendCommand(gcode);
         }
         rdr.Close();
