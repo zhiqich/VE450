@@ -77,7 +77,7 @@ public class Mach3V2 : MonoBehaviour
             if (System.IO.File.Exists(Path.Combine(outputPath, results[0])) == false)
             {
                 Debug.Log("No result");
-                yield return new WaitForSeconds(delay);
+                // yield return new WaitForSeconds(delay);
                 continue;
             }
             sr = File.OpenText(Path.Combine(outputPath, results[0]));
@@ -94,7 +94,7 @@ public class Mach3V2 : MonoBehaviour
             sr.Close();
             sr.Dispose();
             // System.IO.File.Delete(Path.Combine(commandPath, commands[5]));
-            yield return new WaitForSeconds(delay);
+            // yield return new WaitForSeconds(delay);
         }
     }
 
